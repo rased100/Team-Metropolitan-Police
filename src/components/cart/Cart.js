@@ -8,7 +8,6 @@ const Cart = (props) => {
     let memberName = ' ';
     let total = 0;
     for (const member of cart) {
-        console.log(member)
         total = total + member.Salary;
         memberName = memberName + member.Name + '. ';
 
@@ -16,7 +15,7 @@ const Cart = (props) => {
     return (
         <div className="cart">
             <h4>Total Member added: {props.cart.length}</h4>
-
+            <h6 className="name">Names: </h6>
             <h6 className="name">{memberName}</h6>
             <h6>Total Money Need: ${total
             }</h6>
