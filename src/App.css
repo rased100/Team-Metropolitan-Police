@@ -1,5 +1,6 @@
 body{
-  background-color:rgba(0, 60, 255, 0.568);
+  /* background-color:rgba(0, 60, 255, 0.568); */
+  background-color: rgba(0, 0, 0, 0.521);
 }
 .App {
   text-align: center;

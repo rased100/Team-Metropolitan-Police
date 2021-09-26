@@ -3,7 +3,6 @@
     grid-template-columns: 3fr 1fr;
 }
 .member-cont{
-    border-right: 1px solid black;
     display: grid;
     grid-template-columns:auto auto auto;
 }

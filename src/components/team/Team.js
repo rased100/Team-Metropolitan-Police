@@ -4,16 +4,20 @@ import Member from '../member/Member';
 import './Team.css';
 
 const Team = () => {
+    // state for members
     const [members, setMembers] = useState([]);
+
+    // state for cart
     const [cart, setCart] = useState([]);
 
-
+    // fetch
     useEffect(() => {
         fetch('./police.json')
             .then(res => res.json())
             .then(data => setMembers(data));
     }, [])
 
+    // Handle add to list button
     const handleAddToList = (member) => {
         const newCart = [...cart, member];
         setCart(newCart);
@@ -22,6 +26,7 @@ const Team = () => {
 
 
     return (
+        // container
         <div className="team-cont">
             <div className="member-cont bg-secondary">
                 {
