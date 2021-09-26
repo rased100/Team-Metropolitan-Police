@@ -15,8 +15,6 @@ const Team = () => {
     }, [])
 
     const handleAddToList = (member) => {
-        // console.log(member)
-        let cart = [];
         const newCart = [...cart, member];
         setCart(newCart);
     }
@@ -25,9 +23,7 @@ const Team = () => {
 
     return (
         <div className="team-cont">
-
-
-            <div className="list-cont bg-secondary">
+            <div className="member-cont bg-secondary">
                 {
                     members.map(member => <Member
                         key={member.sl}
@@ -35,14 +31,9 @@ const Team = () => {
                         handleAddToList={handleAddToList}
                     ></Member>)
                 }
-
             </div>
-
-
             <div className="cart-cont">
-                <Cart
-                    cart={cart}
-                ></Cart>
+                <Cart cart={cart}></Cart>
             </div>
 
         </div>

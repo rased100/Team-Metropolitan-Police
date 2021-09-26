@@ -2,7 +2,7 @@ import React from 'react';
 import './Menber.css';
 
 const Member = (props) => {
-    // console.log(props.member)
+    // console.log(props)
     const { Name, Rank, Salary, Email, img, Mobile } = props.member;
     return (
         <div className="member">
@@ -12,9 +12,8 @@ const Member = (props) => {
             <i><p>Salary: {Salary}</p></i>
             <p>Mobile: {Mobile}</p>
             <p>Email: {Email}</p>
-            <button onClick={() => {
-                props.handleAddToList(props.member)
-            }}>Add to List</button>
+            <button onClick={() => props.handleAddToList(props.member)}
+            >Add to List</button>
         </div>
     );
 };
