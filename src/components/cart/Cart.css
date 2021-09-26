@@ -8,3 +8,14 @@
     margin-top: 5px;
     text-align: left;
 }
+.name{
+    color:black
+}
+.select-btn{
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color:rgb(233, 13, 204);
+    color: white;
+}

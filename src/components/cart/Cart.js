@@ -3,8 +3,8 @@ import './Cart.css';
 
 const Cart = (props) => {
     const { cart } = props;
-    console.log(cart)
 
+    // cart update
     let memberName = ' ';
     let total = 0;
     for (const member of cart) {
@@ -15,10 +15,12 @@ const Cart = (props) => {
     }
     return (
         <div className="cart">
-            <h5>Total Member added: {props.cart.length}</h5>
-            <h5>Name:{memberName}</h5>
-            <h6>Total Money Need: {total
+            <h4>Total Member added: {props.cart.length}</h4>
+
+            <h6 className="name">{memberName}</h6>
+            <h6>Total Money Need: ${total
             }</h6>
+            <button className="select-btn"><i class="fas fa-check-circle"></i> Select</button>
 
         </div>
     );
